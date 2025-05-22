@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <link rel="icon" href="img/favicon.ico" sizes="any" /> -->
+
+  </head>
+  <body>
+<div class="container">
+    <header class="header"><br><br><br>
+      <h3 class="allLeftshift">Billing Information</h3>
+      <p class="allLeftshift"> Update your billing details and address</p>
+    </header><br><br>
+    
+    <form onsubmit="showAlert(); return false;">
+      <div class="PaymentDetails">
+        <div class="Payment"><p class="allLeftshift"> Payment details</p></div><br>
+        <div class="details">
+        <label class="allLeftshift">Card number </label><br>
+      
+        <div class="image">
+          <img src="./img/Mastercard_logo.webp" width="30px" height="30px">
+        <input class="cardName" type="text" minlength="12" maxlength="12" onkeydown="return restrictKeys(event)" placeholder="1234 1234 1234 1234" required><br><br>
+        </div>
+
+        <label class="allLeftshift">Cardholder name </label><br>
+          <input class="cardName" type="text" minlength="3" maxlength="18" placeholder="Full name on card" required><br><br>
+          <div class="expiry">
+            <div class="cvv">
+            <label>Expiry </label><br>
+            <input class="expiryAndCvv" type="text" minlength="4" maxlength="4" onkeydown="return restrictKeys(event)" placeholder="MM/YY" required>
+            </div> 
+
+            <div class="cvv">
+            <label>CVV</label><br>
+            <input class="expiryAndCvv" type="text" minlength="3" maxlength="3" onkeydown="return restrictKeys(event)" placeholder="123" required><br><br>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="white-line"></div><br>
+
+      <div class="emailAddress">
+        <div class="email">
+          <p class="allLeftshift">Email address</p><br>
+        </div>
+        <div class="address">
+          <label class="allLeftshift">Email</label><br>
+          <input class="cardName" id="email" type="email" placeholder="user@example.com" required><br><br>
+        </div>
+      </div><br>
+      <div class="white-line"></div><br>
+
+      <div class="addressDetails">
+        <div class="Add">
+          <p class="allLeftshift"> Address details</p><br>
+        </div>
+        <div class="AddDet">
+        <label class="allLeftshift ">Country / Region</label>
+        <select id="card" class="cardName1 cardName">
+          <option value="india">India</option>
+          <option value="singapore">Singapore</option>
+          <option value="vietnam">Vietnam</option>
+          <option value="nepal">Nepal</option>
+          <option value="bhutan">Bhutan</option>
+          <option value="USA">USA</option>
+      </select><br><br>
+      <label class="allLeftshift" >Address </label>
+      <input class="cardName" type="text" placeholder="Street address " required><br>
+      <input class="cardName" type="text" placeholder="Apartment, suite etc (optional)"><br><br>
+
+      <div class="cityStateZip">
+        <div class="city">
+          <label >city</label><br>
+          <input class="city1" type="text" placeholder="city" required><br>
+        </div>
+        <div class="state">
+          <label>State</label><br>
+          <select class="state1" >
+            <option>Andhra</option>
+            <option>Arunachal Pradesh</option>
+            <option>Haryana</option>
+            <option>Gujarat</option>
+            <option>Rajasthan</option>
+            <option> Punjab</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option></option>
+          </select><br>
+        </div>
+        <div class="zip">
+          <label>zip</label><br>
+          <input  class="zip1" type="text" minlength="6" maxlength="6" onkeydown="return restrictKeys(event)" placeholder="123" required><br><br>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="white-line"></div><br>
+      <div class="btn">
+      <button class="button">Save changes</button>
+    </div>
+    </form><br><br><br><br>
+  </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
