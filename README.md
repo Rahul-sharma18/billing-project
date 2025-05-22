@@ -3,7 +3,8 @@
 ## Getting started
 
 ### Overview
-![alt text](image-1.png)
+
+![alt text](<Screenshot 2025-05-22 at 10.06.43.png>)
 
 At a high level, completing each challenge involves the following steps:
 
