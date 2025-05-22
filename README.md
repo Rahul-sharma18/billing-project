@@ -3,6 +3,7 @@
 ## Getting started
 
 ### Overview
+![alt text](image-1.png)
 
 At a high level, completing each challenge involves the following steps:
 
